@@ -10,6 +10,12 @@ First you need to add the Gson lib in your project gradle:
 compile 'com.google.code.gson:gson:2.8.1' 
 ```
 
+In your Android Manifest file put:
+```xml
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
 To use the class, initialize it passing the file path and the activity:
 ```java
 ManageDataJson.initialize("FILE_PATH", this);
